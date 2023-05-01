@@ -7,8 +7,8 @@ const cars = ['Tesla', 'Mercedes', 'Honda']
 const [ randomCar ] = cars
 const [ ,otherRandomCar ] = cars
 //Predict the output
-console.log(randomCar)
-console.log(otherRandomCar)
+console.log(randomCar) // Tesla
+console.log(otherRandomCar) // Mercedes
 
 // problem 2
 
@@ -19,8 +19,8 @@ const employee = {
 }
 const { name: otherName } = employee;
 //Predict the output
-console.log(name);
-console.log(otherName);
+// console.log(name); // ReferenceError: name is not defined
+console.log(otherName); // Elon
 
 // problem 3
 
@@ -32,8 +32,8 @@ const person = {
 const password = '12345';
 const { password: hashedPassword } = person;
 //Predict the output
-console.log(password);
-console.log(hashedPassword);
+console.log(password); // 12345
+console.log(hashedPassword); // undefined
 
 // problem 4
 
@@ -42,8 +42,8 @@ const [,first] = numbers;
 const [,,,second] = numbers;
 const [,,,,,,,,third] = numbers;
 //Predict the output
-console.log(first == second);
-console.log(first == third);
+console.log(first == second); // false
+console.log(first == third); // true
 
 // problem 5
 
@@ -55,8 +55,8 @@ const { key } = lastTest;
 const { secondKey } = lastTest;
 const [ ,willThisWork] = secondKey;
 //Predict the output
-console.log(key);
-console.log(secondKey);
-console.log(secondKey[0]);
-console.log(willThisWork);
+console.log(key); // value
+console.log(secondKey); // [1, 5, 1, 8, 3, 3]
+console.log(secondKey[0]); // 1
+console.log(willThisWork); // 5
 
